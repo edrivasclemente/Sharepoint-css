@@ -115,12 +115,14 @@ border:none;
 }
 hr
 {
+margin-top: 1rem;
+margin-bottom: 1rem;
 border-width:0px;
 /* [ReplaceColor(themeColor:"SubtleLines")] */ border-top:1px solid #c6c6c6;
 }
 table
 {
-border-width:0px;
+border-collapse: collapse;
 }
 input,
 select,
@@ -136,7 +138,8 @@ vertical-align:middle;
 }
 textarea
 {
-overflow:auto;
+    overflow: auto;
+    resize: vertical;
 }
 input[type=password],
 input[type=text],
@@ -258,10 +261,19 @@ button[disabled][disabled]
 /* [ReplaceColor(themeColor:"ButtonDisabledBackground")] */ background-color:#fdfdfd;
 /* [ReplaceColor(themeColor:"ButtonDisabledText")] */ color:#b1b1b1;
 }
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+  }
 a:visited
 {
 /* [ReplaceColor(themeColor:"Hyperlinkfollowed")] */ color:#0072c6;
 text-decoration:none;
+}
+a:hover {
+color: #0056b3;
 }
 a:hover,a:active
 {
