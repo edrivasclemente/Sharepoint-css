@@ -55,13 +55,19 @@ padding-bottom:35px;
 h1,h2,h3,h4,h5,h6,.ms-h1,.ms-h2,.ms-h3,.ms-h4,.ms-h5,.ms-h6
 {
 margin:auto;
+margin-bottom: 0.5rem;
 font-weight:normal;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 h1,
 .ms-h1
 {
 /* [ReplaceFont(themeFont:"large-heading")] */ font-family:"Segoe UI Light","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
-font-size:2.3em;
+font-size: 2.5rem;
 /* [ReplaceColor(themeColor:"SubtleBodyText")] */ color:#777;
 font-weight:200;
 }
@@ -74,11 +80,11 @@ font-weight:300;
 }
 h2,.ms-h2
 {
-font-size:1.46em;
+    font-size: 2rem;
 }
 h3,.ms-h3
 {
-font-size:1.15em;
+    font-size: 1.75rem;
 }
 h4,h5,h6,.ms-h4,.ms-h5,.ms-h6
 {
@@ -86,19 +92,20 @@ h4,h5,h6,.ms-h4,.ms-h5,.ms-h6
 }
 h4,.ms-h4
 {
-font-size:1em;
+    font-size: 1.5rem;
 /* [ReplaceColor(themeColor:"StrongBodyText")] */ color:#262626;
 }
 h5,.ms-h5
 {
-font-size:1em;
+    font-size: 1.25rem;
 }
 h6,.ms-h6
 {
-font-size:1em;
+    font-size: 1rem;
 }
 img
 {
+vertical-align: middle;
 border:none;
 -webkit-tap-highlight-color:transparent;
 }
