@@ -55,19 +55,13 @@ padding-bottom:35px;
 h1,h2,h3,h4,h5,h6,.ms-h1,.ms-h2,.ms-h3,.ms-h4,.ms-h5,.ms-h6
 {
 margin:auto;
-margin-bottom: 0.5rem;
 font-weight:normal;
-}
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
 }
 h1,
 .ms-h1
 {
 /* [ReplaceFont(themeFont:"large-heading")] */ font-family:"Segoe UI Light","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
-font-size: 2.5rem;
+font-size:2.3em;
 /* [ReplaceColor(themeColor:"SubtleBodyText")] */ color:#777;
 font-weight:200;
 }
@@ -80,11 +74,11 @@ font-weight:300;
 }
 h2,.ms-h2
 {
-    font-size: 2rem;
+font-size:1.46em;
 }
 h3,.ms-h3
 {
-    font-size: 1.75rem;
+font-size:1.15em;
 }
 h4,h5,h6,.ms-h4,.ms-h5,.ms-h6
 {
@@ -92,20 +86,19 @@ h4,h5,h6,.ms-h4,.ms-h5,.ms-h6
 }
 h4,.ms-h4
 {
-    font-size: 1.5rem;
+font-size:1em;
 /* [ReplaceColor(themeColor:"StrongBodyText")] */ color:#262626;
 }
 h5,.ms-h5
 {
-    font-size: 1.25rem;
+font-size:1em;
 }
 h6,.ms-h6
 {
-    font-size: 1rem;
+font-size:1em;
 }
 img
 {
-vertical-align: middle;
 border:none;
 -webkit-tap-highlight-color:transparent;
 }
@@ -115,14 +108,12 @@ border:none;
 }
 hr
 {
-margin-top: 1rem;
-margin-bottom: 1rem;
 border-width:0px;
 /* [ReplaceColor(themeColor:"SubtleLines")] */ border-top:1px solid #c6c6c6;
 }
 table
 {
-border-collapse: collapse;
+border-width:0px;
 }
 input,
 select,
@@ -138,8 +129,7 @@ vertical-align:middle;
 }
 textarea
 {
-    overflow: auto;
-    resize: vertical;
+overflow:auto;
 }
 input[type=password],
 input[type=text],
@@ -261,19 +251,10 @@ button[disabled][disabled]
 /* [ReplaceColor(themeColor:"ButtonDisabledBackground")] */ background-color:#fdfdfd;
 /* [ReplaceColor(themeColor:"ButtonDisabledText")] */ color:#b1b1b1;
 }
-
-a {
-    color: #007bff;
-    text-decoration: none;
-    background-color: transparent;
-  }
 a:visited
 {
 /* [ReplaceColor(themeColor:"Hyperlinkfollowed")] */ color:#0072c6;
 text-decoration:none;
-}
-a:hover {
-color: #0056b3;
 }
 a:hover,a:active
 {
