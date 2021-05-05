@@ -1,14 +1,19 @@
 ﻿/* _lcid="1033" _version="15.0.4841"
 _LocalBinding */
-
-body, .ms-core-defaultFont, #pageStatusBar, .ms-status-msg, .js-callout-body
+body,
+.ms-core-defaultFont,
+#pageStatusBar,
+.ms-status-msg,
+.js-callout-body
 {
-font-family:"Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+/* [ReplaceFont(themeFont:"body")] */ font-family:"Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
 font-size:13px;
 }
-body, .ms-core-defaultFont, .js-callout-body
+body,
+.ms-core-defaultFont,
+.js-callout-body
 {
-color:#444;
+/* [ReplaceColor(themeColor:"BodyText")] */ color:#444;
 }
 .ms-core-defaultFont
 {
@@ -22,7 +27,7 @@ body
 {
 margin:0px;
 overflow:hidden;
-background-color:#fff;
+/* [ReplaceColor(themeColor:"PageBackground")] */ background-color:#fff;
 background-size:cover;
 background-repeat:no-repeat;
 }
@@ -52,14 +57,16 @@ h1,h2,h3,h4,h5,h6,.ms-h1,.ms-h2,.ms-h3,.ms-h4,.ms-h5,.ms-h6
 margin:auto;
 font-weight:normal;
 }
-h1, .ms-h1
+h1,
+.ms-h1
 {
 /* [ReplaceFont(themeFont:"large-heading")] */ font-family:"Segoe UI Light","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
 font-size:2.3em;
 /* [ReplaceColor(themeColor:"SubtleBodyText")] */ color:#777;
 font-weight:200;
 }
-h2,h3,.ms-h2,.ms-h3, .ms-headerFont
+h2,h3,.ms-h2,.ms-h3,
+.ms-headerFont
 {
 /* [ReplaceFont(themeFont:"heading")] */ font-family:"Segoe UI Semilight","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
 /* [ReplaceColor(themeColor:"StrongBodyText")] */ color:#262626;
@@ -108,7 +115,12 @@ table
 {
 border-width:0px;
 }
-input, select, label, textarea, button, option
+input,
+select,
+label,
+textarea,
+button,
+option
 {
 font-family:inherit;
 font-size:inherit;
@@ -119,54 +131,90 @@ textarea
 {
 overflow:auto;
 }
-input[type=password], input[type=text], input[type=file], select, textarea, .sp-peoplepicker-topLevel, .sp-peoplepicker-topLevelDisabled, .sp-peoplepicker-autoFillContainer, .ms-inputBox
+input[type=password],
+input[type=text],
+input[type=file],
+select,
+textarea,
+.sp-peoplepicker-topLevel,
+.sp-peoplepicker-topLevelDisabled,
+.sp-peoplepicker-autoFillContainer,
+.ms-inputBox
 {
-border:1px solid #ababab;
-background-color:#fff;
-background-color:rgba( 255,255,255,0.85 );
-color:#444;
+/* [ReplaceColor(themeColor:"Lines")] */ border:1px solid #ababab;
+/* [ReplaceColor(themeColor:"BackgroundOverlay",opacity:"1")] */ background-color:#fff;
+/* [ReplaceColor(themeColor:"BackgroundOverlay")] */ background-color:rgba( 255,255,255,0.85 );
+/* [ReplaceColor(themeColor:"BodyText")] */ color:#444;
 }
-input[type=password], input[type=text], input[type=file], textarea, .ms-inputBox
+input[type=password],
+input[type=text],
+input[type=file],
+textarea,
+.ms-inputBox
 {
 padding:2px 5px;
 }
-input[type=button], input[type=reset], input[type=submit], button
+input[type=button],
+input[type=reset],
+input[type=submit],
+button
 {
 min-width:6em;
 padding:7px 10px;
-border:1px solid #ababab;
-background-color:#fdfdfd;
-background-color:#fdfdfd;
+/* [ReplaceColor(themeColor:"ButtonBorder")] */ border:1px solid #ababab;
+/* [ReplaceColor(themeColor:"ButtonBackground",opacity:"1")] */ background-color:#fdfdfd;
+/* [ReplaceColor(themeColor:"ButtonBackground")] */ background-color:#fdfdfd;
 margin-left:10px;
-font-family:"Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+/* [ReplaceFont(themeFont:"body")] */ font-family:"Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
 font-size:11px;
-color:#444;
+/* [ReplaceColor(themeColor:"ButtonText")] */ color:#444;
 }
-input[type=password]:focus, input[type=text]:focus, select:focus, textarea:focus, .sp-peoplepicker-topLevelFocus, .ms-inputBoxActive, .ms-inputBox.ms-inputBoxActive:hover
+input[type=password]:focus,
+input[type=text]:focus,
+select:focus,
+textarea:focus,
+.sp-peoplepicker-topLevelFocus,
+.ms-inputBoxActive,
+.ms-inputBox.ms-inputBoxActive:hover
 {
 /* [ReplaceColor(themeColor:"AccentLines")] */ border-color:#2a8dd4;
 }
-input[type=button]::-moz-inner-focus, input[type=reset]::-moz-inner-focus, input[type=submit]::-moz-inner-focus, button::-moz-inner-focus
+input[type=button]::-moz-inner-focus,
+input[type=reset]::-moz-inner-focus,
+input[type=submit]::-moz-inner-focus,
+button::-moz-inner-focus
 {
 /* [ReplaceColor(themeColor:"ButtonText")] */ border-color:#444;
 }
-input[type=password]:hover, input[type=text]:hover, input[type=file]:hover, textarea:hover, .sp-peoplepicker-topLevel:hover, .ms-inputBox:hover
+input[type=password]:hover,
+input[type=text]:hover,
+input[type=file]:hover,
+textarea:hover,
+.sp-peoplepicker-topLevel:hover,
+.ms-inputBox:hover
 {
 /* [ReplaceColor(themeColor:"StrongLines")] */ border-color:#92c0e0;
 }
-input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover, button:hover
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover,
+button:hover
 {
 /* [ReplaceColor(themeColor:"ButtonHoverBorder")] */ border-color:#92c0e0;
 /* [ReplaceColor(themeColor:"ButtonHoverBackground",opacity:"1")] */ background-color:#e6f2fa;
 /* [ReplaceColor(themeColor:"ButtonHoverBackground")] */ background-color:#e6f2fa;
 }
-input[type=button]:active, input[type=reset]:active, input[type=submit]:active, button:active
+input[type=button]:active,
+input[type=reset]:active,
+input[type=submit]:active,
+button:active
 {
 /* [ReplaceColor(themeColor:"ButtonPressedBorder")] */ border-color:#2a8dd4;
 /* [ReplaceColor(themeColor:"ButtonPressedBackground",opacity:"1")] */ background-color:#92b7d1;
 /* [ReplaceColor(themeColor:"ButtonPressedBackground")] */ background-color:#92c0e0;
 }
-input.ms-button-emphasize, button.ms-button-emphasize
+input.ms-button-emphasize,
+button.ms-button-emphasize
 {
 /* [ReplaceColor(themeColor:"EmphasisBorder")] */ border-color:#0067b0;
 /* [ReplaceColor(themeColor:"EmphasisBackground",opacity:"1")] */ background-color:#0072c6;
